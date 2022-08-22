@@ -42,12 +42,13 @@ class MyStatelessWidget extends StatelessWidget {
             context: context,
             builder: (BuildContext context) => buildAlertDialogV2(context),
           ),
-          child: const Text('Show Dialog Button'),
+          child: const Text('Show Dialog Bottom'),
         ),
       ],
     );
   }
 
+  //Show Dialog
   AlertDialog buildAlertDialog(BuildContext context) {
     return AlertDialog(
       title: const Text('AlertDialog Title'),
@@ -65,6 +66,7 @@ class MyStatelessWidget extends StatelessWidget {
     );
   }
 
+  //Show Dialog Bottom
   AlertDialog buildAlertDialogV2(BuildContext context) {
     return AlertDialog(
       backgroundColor: Colors.transparent,
